@@ -1,0 +1,73 @@
+#leaderboard{
+    cursor: pointer;
+}
+body{
+    padding:0px;
+    margin:0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --background:#218380;
+    --background-light:#fff;
+    --text-light:#fff;
+    --text-dark:#000;
+}
+
+.header{
+    display:flex;
+    background-color: var(--background);
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:16px;
+    color:#fff;
+}
+.card-body{
+    line-height-step: 20px;
+}
+main{
+    display:flex;
+    justify-content:center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+}
+input{
+    width:130px;
+    height:30px;
+}
+.card{
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    box-shadow:8px 4px 5px #2222;
+    margin-top:50px;
+    max-width:500px;
+}
+.button-list{
+    display:grid;
+    grid-template-rows:1fr;
+    gap:10px;
+}
+.card-action-button{
+    padding:10px;
+    padding-left:15px;
+    padding-right:15px;
+    border:none;
+    color:var(--text-light);
+    border-radius:5px;
+    background-color: var(--background);
+    cursor:pointer;
+}
+.full-width{
+    width:100%;
+    text-align-last: left;
+}
+@media screen and (max-width: 550px) and (min-width: 20px){
+  .card{
+      max-width: 300px;
+  }
+}
